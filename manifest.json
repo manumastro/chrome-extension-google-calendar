@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Meet Recording Reminder",
+  "version": "0.1.0",
+  "description": "Rileva le pagine Google Meet e prepara il reminder per la registrazione.",
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["src/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
